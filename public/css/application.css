@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  background-image: url("../img/tweed.png");
+  font-family: 'Share', cursive;
+}
+
+#events_container {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
+}
+
+.event {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.4rem;
+}
+
+.event_info {
+  height: 5rem;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #999999;
+  background-size: 100%;
+  z-index: -1;
+  display: none;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.event_panel {
+  height: 10rem;
+  background-size: 100%;
+  background-position: center 40%;
+  box-shadow: 0px 3px 10px rgba(122, 122, 122, 0.25);
+  background-color: white;
+}
+
+.event_title_date_container {
+  position: relative;
+  top: 7.5rem;
+  width: 34rem;
+  padding-left: 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: rgba(255, 255, 255, 1);
+  font-weight: lighter;
+}
+
+.event_title {
+  font-size: 1.5rem;
+}
+
+.event_date {
+  font-size: 1.2rem;
+  float: right;
+}
+
+/*HEADER*/
+.header {
+  width: 100%;
+  height: 5rem;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  margin-top: 1rem;
+  width: 20%;
+  height: 3rem;
+  outline: none;
+  border: 0rem;
+  border-radius: 0.4rem;
+  font-size: 1.3rem;
+  color: #fff;
+  background-color: #999999;
+  font-family: 'Share', cursive;
+}
+
+.button:active {
+  background-color: gray;
+}
+
+.header_button {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+/*INPUT FIELD*/
+.new_event_form {
+  width: 100%;
+  display: none;
+}
+
+.new_event_input_field {
+  margin-right: auto;
+  margin-left: auto;
+  width: 30%;
+  padding: 0.5rem 1rem;
+  font-size: 1.3rem;
+  font-weight: lighter;
+  font-family: 'Share', cursive;
+  /* removes border */
+  border: 0rem;
+  /* removes active highlighting */
+  outline: none;
+  /* adds line breaks */
+  display: block;
+}
+
+#title_input_field {
+  border-radius: 3px 3px 0px 0px;
+  height: 2rem;
+}
+
+#description_input_field {
+  resize: none;
+}
+
+#location_input_field {
+}
+
+#imgurl_input_field {
+  border-radius: 0px 0px 3px 3px;
+  height: 2rem;
+}

@@ -1,0 +1,39 @@
+<div class="header"></div>
+
+<!-- create and discover buttons -->
+<center>
+  <button class="button" class="header_button" id="create_button">Create</button>
+  <button class="button" class="header_button" id="discover_button">Discover</button>
+</center>
+
+<!-- new event form -->
+<form action="new_event" method="post">
+  <div class="new_event_form">
+    <input type="text" class="new_event_input_field" id="title_input_field"
+    placeholder="Title" maxlength="35" name="title">
+    <textarea rows="4" class="new_event_input_field" id="description_input_field"
+    placeholder="Description" maxlength="148" name="description"></textarea>
+    <input type="text" class="new_event_input_field" id="location_input_field"
+    placeholder="Location" maxlength="35" name="location">
+    <input type="text" class="new_event_input_field" id="imgurl_input_field"
+    placeholder="Image URL" name="imgurl">
+    <center>
+      <button type="submit" class="button" id="new_event_button">Publish event</button>
+    </center>
+  </div>
+</form>
+
+<!-- prints each event panel -->
+<div id="events_container">
+  <% @events.each do |event| %>
+    <div class="event">
+      <div class="event_panel" style="background-image: url(<%= event.imgurl %>)">
+        <div class="event_title_date_container">
+          <span class="event_title"><%= "#{event.title}" %></span>
+          <span class="event_date"><%= "#{event.date}" %></span>
+        </div>
+      </div>
+      <div class="event_info"><%= "#{event.description}" %></div>
+    </div>
+  <% end %>
+</div>
