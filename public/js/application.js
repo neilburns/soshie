@@ -7,10 +7,15 @@
 //   $(this).find('.event_info').slideUp();
 // });
 
+// controls sliding event info panels
 $('.event').on('click', function(){
-  $(this).find('.event_info').slideToggle();
+  $('.event_info_panel').not($(this).find('.event_info_panel')).slideUp();
+  $('.event_info_text_container').not($(this).find('.event_info_text_container')).slideUp();
+  $(this).find('.event_info_panel').show();
+  $(this).find('.event_info_text_container').slideToggle();
 });
 
+// opens new event form
 $('#create_button').on('click', function(){
   $('.new_event_form').show();
   $('#create_button').hide();
