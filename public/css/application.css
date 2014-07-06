@@ -1,94 +1,123 @@
 body {
+  /*background-color: #6967B2;*/
+  background-image: url("../img/stardust.png");
+  /*background-color: white;*/
+  /*reset*/
   margin: 0;
   padding: 0;
-  background-color: #9966FF;
 }
 
-/* EVENT FEED */
+  /*ALL EVENTS CONTAINER*/
+  #events_container {
+    max-width: 45rem;
+    /*centering*/
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-#container {
-  max-width: 45rem;
-  margin-left: auto;
-  margin-right: auto;
-}
+    /*SINGLE EVENT CONTAINER*/
+    .single_event {
+      margin-bottom: 0.6rem;
+      /*responsive width*/
+      width: 90%;
+      min-width: 32rem;
+      /*centering*/
+      margin-left: auto;
+      margin-right: auto;
+      /*soft border shadow*/
+      box-shadow: 0px 3px 14px rgba(20, 20, 20, 0.6);
+    }
 
-.event {
-  width: 90%;
-  min-width: 32rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0.6rem;
-  box-shadow: 0px 3px 14px rgba(20, 20, 20, 0.6);
-}
+      /*EVENT IMAGE PANEL*/
+      .image_panel {
+        height: 10rem;
+        /*keeps image set size*/
+        background-size: 100%;
+        /*centering image*/
+        background-position: center 40%;
+      }
 
+        .image_panel_text_container {
+          padding-left: 1rem;
+          background-color: rgba(0, 0, 0, 0.6);
+          /*font*/
+          font-family: 'Ubuntu', sans-serif;
+          font-weight: lighter;
+          color: white;
+          /*sets position and dimensions relative to parent*/
+          position: relative;
+          top: 7.5rem;
+          /*responsive width*/
+          width: 80%;
+          min-width: 25rem;
+        }
 
-/* EVENT INFO PANEL */
-.event_info_panel {
-  border-top: 0.2rem solid #6242A3;
-  height: auto;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: #CCCCCC;
-  background-size: 100%;
-  z-index: -1;
-  display: none;
-  font-size: 1.2rem;
-}
+          .event_title {
+            font-size: 1.5rem;
+          }
 
-.event_info_text_container {
-  font-family: 'Homenaje', sans-serif;
-  margin-left: 0.5rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  width: 70%;
-  display: none;
-}
+          .event_date_type {
+            float: right;
+            text-align: center;
+          }
 
-/* EVENT IMAGE PANELS */
-.event_image_panel {
-  height: 10rem;
-  background-size: 100%;
-  background-position: center 40%;
-}
+            .event_date {
+              font-size: 1rem;
+            }
 
-#header_image_panel {
-  background-color: black;
-  text-align: center;
-}
+            .event_type {
+              font-size: 0.8rem;
+            }
 
-#header_title {
-  font-size: 4rem;
-  font-family: 'Permanent Marker', cursive;
-  color: #9966FF;
-}
+      /*EVENT INFO PANEL*/
+      .info_panel {
+        background-color: #CCCCCC;
+        font-size: 1.2rem;
+        /*hidden at start*/
+        display: none;
+        /*responsive height*/
+        height: auto;
+        /*centering*/
+        margin-right: auto;
+        margin-left: auto;
+      }
 
-#header_subtitle {
-  font-family: 'Ubuntu', sans-serif;
-  font: lighter;
-  font-size: 1.5rem;
-  color: #9966FF;
-}
+        .info_panel_text_container {
+          font-family: 'Homenaje', sans-serif;
+          /*hidden at start*/
+          display: none;
+          /*padding*/
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem;
+          padding-left: 0.5rem;
+          /*responsive width*/
+          width: 70%;
+        }
 
-.event_title_date_container {
-  position: relative;
-  top: 7.5rem;
-  width: 80%;
-  min-width: 25rem;
-  padding-left: 1rem;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: rgba(255, 255, 255, 1);
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: lighter;
-}
+      /*HEADER PANEL*/
+      #header {
+        background-color: black;
+        text-align: center;
+      }
 
-.event_title {
-  font-size: 1.5rem;
-}
+        #header_title {
+          font-family: 'Fugaz One', cursive;
+          font-size: 4rem;
+          color: white;
+          /*-webkit-background-clip:text;*/
+          /*-webkit-text-fill-color:transparent;*/
+        }
 
-.event_date {
-  font-size: 1.2rem;
-  float: right;
-}
+        #header_subtitle {
+          padding-top: 1rem;
+          /*font*/
+          font-family: 'Ubuntu', sans-serif;
+          font-size: 1rem;
+          color: white;
+          font: lighter;
+        }
+
+/*###########################################################*/
 
 /*ANGLES*/
 .topright_angle {
@@ -112,7 +141,6 @@ body {
   border-bottom: 100rem solid #6242A3;
 }
 
-/* BUTTONS */
 .button {
   margin-top: 1rem;
   width: 20%;
@@ -135,7 +163,6 @@ body {
   margin-left: 1rem;
 }
 
-/*INPUT FIELD*/
 .new_event_form {
   width: 100%;
   display: none;
@@ -173,6 +200,3 @@ body {
   height: 2rem;
 }
 
-@media only screen and (min-width: 992px) {
-
-}

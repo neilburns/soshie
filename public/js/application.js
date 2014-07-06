@@ -7,12 +7,34 @@
 //   $(this).find('.event_info').slideUp();
 // });
 
+window.onload = function() {
+  // grabs location of user device
+  function getLocation() {
+      if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+          alert("Geolocation is not supported by this browser.")
+      }
+  }
+  // sends location to index
+  function showPosition(position) {
+      var latitude = position.coords.latitude;
+      var longitude = position.coords.longitude;
+      $.ajax({
+        url: '/',
+        type: 'get',
+        data: {latitude: latitude, longitude: longitude},
+      });
+  }
+  getLocation();
+}
+
 // controls sliding event info panels
-$('.event').on('click', function(){
-  $('.event_info_panel').not($(this).find('.event_info_panel')).slideUp();
-  $('.event_info_text_container').not($(this).find('.event_info_text_container')).slideUp();
-  $(this).find('.event_info_panel').show();
-  $(this).find('.event_info_text_container').slideToggle();
+$('.single_event').on('click', function(){
+  $('.info_panel').not($(this).find('.info_panel')).slideUp();
+  $('.info_panel_text_container').not($(this).find('.info_panel_text_container')).slideUp();
+  $(this).find('.info_panel').show();
+  $(this).find('.info_panel_text_container').slideToggle();
 });
 
 // opens new event form

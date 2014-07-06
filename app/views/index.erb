@@ -1,7 +1,6 @@
 <!-- <div class="topright_angle"></div> -->
 <!-- <div class="bottomleft_angle"></div> -->
 
-
 <!-- create and discover buttons -->
 <!-- <center>
   <button class="button" class="header_button" id="create_button">Create</button>
@@ -25,24 +24,30 @@
   </div>
 </form> -->
 
-<!-- prints each event panel -->
-<div id="container">
-    <div class="event">
-      <div class="event_image_panel" id="header_image_panel">
-        <div id="header_title">being there</div>
-        <div id="header_subtitle">together in the real world.</div>
+<div id="events_container">
+    <!-- header panel -->
+    <div class="single_event">
+      <div class="image_panel" id="header">
+        <div id="header_title">get-together</div>
+        <div id="header_subtitle">the people you love,<br>the things you care about.</div>
       </div>
     </div>
+  <!-- prints each event panel -->
   <% @events.each do |event| %>
-    <div class="event">
-      <div class="event_image_panel" style="background-image: url(<%= event.imgurl %>)">
-        <div class="event_title_date_container">
+    <div class="single_event">
+      <!-- event image panel -->
+      <div class="image_panel" style="background-image: url(<%= event.imgurl %>)">
+        <div class="image_panel_text_container">
           <span class="event_title"><%= "#{event.title}" %></span>
-          <span class="event_date"><%= "#{event.date}" %></span>
+          <div class="event_date_type">
+            <span class="event_type">public</span>
+            <span class="event_date"><%= "#{event.date}" %></span>
+          </div>
         </div>
       </div>
-      <div class="event_info_panel">
-        <div class="event_info_text_container">
+      <!-- event info panel -->
+      <div class="info_panel">
+        <div class="info_panel_text_container">
           <%= "#{event.description}" %>
         </div>
       </div>
