@@ -29,8 +29,10 @@ body {
       /*centering*/
       margin-left: auto;
       margin-right: auto;
-      /*soft border shadow*/
-      box-shadow: 0px 3px 14px rgba(20, 20, 20, 0.6);
+    }
+
+    .single_event:hover {
+      box-shadow: 0px 3px 22px rgba(20, 20, 20, 0.6);
     }
 
       /*EVENT IMAGE PANEL*/
