@@ -23,6 +23,7 @@ window.onload = function() {
     $("[data-component='banner']").find("[data-component='banner_subtitle']").fadeOut();
     // fade in relevant panels
     $("[data-component='event']").fadeIn("slow");
+    $(document).find("[data-component='info_panel']").slideUp("fast");
     // unbind window resize
     $(window).unbind("resize");
   });
@@ -83,14 +84,9 @@ function writePanels(data) {
 // because event elements are being appened
 // to the DOM after load.
 $(document).on('click',"[data-component='event']",function(){
-  // slide up all panels and containers that
-  // are NOT associated with the event target.
+  // slide up all panels that ARE NOT associated with the event target (if any)
   $("[data-component='info_panel']").not($(this).find("[data-component='info_panel']")).slideUp();
-  $("[data-component='info_panel_text_container']").not(
-    $(this).find("[data-component='info_panel_text_container']")).slideUp();
-  // slide down the panel and container
-  // associated with the event target.
-  $(this).find("[data-component='info_panel']").show();
-  $(this).find("[data-component='info_panel_text_container']").slideToggle();
+  // slide down the panel that IS associated with the event target
+  $(this).find("[data-component='info_panel']").slideToggle();
 });
 

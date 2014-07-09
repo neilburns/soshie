@@ -79,7 +79,7 @@
 
     /*info_panel*/
     .bg-color-gray {background-color: #CCCCCC;}
-    .auto-adjust-height {height: auto;}
+    .height-auto-adjust {height: auto;}
 
       /*info_panel_text_container*/
       .padding {padding: 0.5rem;}
