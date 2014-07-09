@@ -10,7 +10,7 @@ Event.create({:title => "Youth Soccer Tournament", :venue => "Richardson Stadium
 
 Event.create({:title => "Dev Bootcamp Hackathon", :venue => "Dev Bootcamp Office", :address => "633 Folsom Street, San Francisco, CA", :imgurl => "http://www.thedrum.com/uploads/drum_column_article/119859/main_images/hackathon_0.jpg", :description => "The greatest and original coding bootcamp is hosting a hackathon! Come prove your skills and drink beer with us.", :date => "07/21", :time => "8:00 AM"})
 
-Event.create({:title => "San Francisco Giants vs. Oakland Athletics", :venue => "AT&T Park", :address => "24 Willie Mays Plaza, San Francisco, CA 94107", :imgurl => "http://www2.pictures.zimbio.com/gi/Coco+Crisp+Oakland+Athletics+v+San+Francisco+dkOj3C-S295l.jpg", :description => "It's true: baseball is boring. So come for the hotdogs and beer!", :date => "06/29", :time => "6:00 PM"})
+Event.create({:title => "SF Giants vs. Oakland Athletics", :venue => "AT&T Park", :address => "24 Willie Mays Plaza, San Francisco, CA 94107", :imgurl => "http://www2.pictures.zimbio.com/gi/Coco+Crisp+Oakland+Athletics+v+San+Francisco+dkOj3C-S295l.jpg", :description => "It's true: baseball is boring. So come for the hotdogs and beer!", :date => "06/29", :time => "6:00 PM"})
 
 Event.create({:title => "Google I/O Conference", :venue => "Moscone Center", :address => "747 Howard Street, San Francisco, CA 94103", :imgurl => "http://d2omthbq56rzfx.cloudfront.net/wp-content/uploads/2011/05/MacBook-Pro-users-at-Google-IO-2011-image-004.jpg", :description => "Google I/O features highly technical, in-depth sessions focused on building web, mobile, and enterprise applications with Google and open web technologies.", :date => "07/30", :time => "12:00 PM"})
 
