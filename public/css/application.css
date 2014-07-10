@@ -9,90 +9,98 @@
                                                                                     \|_________\|_________|
 */
 
-/*GRID-BASED WIDTH*/
-.width-full {width: 100%;}
-.width-almost-full {width: 90%;}
-.width-three-quarters {width: 75%;}
-.width-two-thirds {width: 66.66%;}
-.width-half {width: 50%;}
-.width-third {width: 33.33%;}
-.width-quarter {width: 25%;}
-.width-eighth {width: 12.5%;}
+/*WIDTH*/
+.w-100per {width: 100%;}
+.w-90per {width: 90%;}
+.w-75per {width: 75%;}
+.w-66per {width: 66.66%;}
+.w-50per {width: 50%;}
+.w-33per {width: 33.33%;}
+.w-25per {width: 25%;}
+.w-20per {width: 20%;}
+.w-15per {width: 15%;}
+.w-12p5per {width: 12.5%;}
+.w-8per {width: 8%;}
+.w-min-35rem {min-width: 35rem}
 
-/*FONT STYLING & TEXT FORMATTING*/
-.font-smallest {font-size: 1rem;}
-.font-small {font-size: 1.3rem;}
-.font-medium {font-size: 2rem;}
-.font-huge {font-size: 6rem;}
-.font-color-white {color: white;}
-.font-weight-light {font-weight: lighter}
+/*FONT AND TEXT*/
+.f-1rem {font-size: 1rem;}
+.f-1p3rem {font-size: 1.3rem;}
+.f-2rem {font-size: 2rem;}
+.f-6rem {font-size: 6rem;}
+.f-c-white {color: white;}
+.f-w-light {font-weight: lighter;}
+.f-f-sansita-one {font-family: 'Sansita One', cursive;}
+.f-f-ubuntu {font-family: 'Ubuntu', sans-serif;}
+.f-f-homenaje {font-family: 'Homenaje', sans-serif;}
 .text-center {text-align: center;}
 
-/*FIXED HEIGHTS*/
-.height-medium {height: 10rem;}
-.height-tall {height: 18rem;}
+/*HEIGHT*/
+.h-1rem {height: 1rem;}
+.h-2rem {height: 2rem;}
+.h-3rem {height: 3rem;}
+.h-5rem {height: 5rem;}
+.h-10rem {height: 10rem;}
+.h-18rem {height: 18rem;}
 
-/*COMPONENT-SPECIFIC PROPERTIES*/
-/*body*/
-/*.bg-img {background-image: url("../img/stardust.png");}*/
-.reset {
-  margin: 0;
-  padding: 0;
-}
+/*PADDING*/
+.pad-remove {padding: 0rem;}
+.pad-0p5rem {padding: 0.5rem;}
+.pad-t-0p5rem {padding-top: 0.5rem;}
+.pad-t-1rem {padding-top: 1rem;}
+.pad-t-4rem {padding-top: 4rem;}
+.pad-t-3rem {padding-top: 3rem;}
+.pad-l-1rem {padding-left: 1rem;}
+.pad-l-1p5rem {padding-left: 1.5rem;}
+.pad-l-0p5rem {padding-left: 0.5rem;}
+.pad-b-0p5rem {padding-bottom: 0.5rem;}
+.pad-r-1p5rem {padding-right: 1.5rem;}
+.pad-r-0p5rem {padding-right: 0.5rem;}
 
-  /*banner*/
-  .font-color-white {color: white;}
+/*BACKGROUND*/
+.bg-c-black {background-color: black;}
+.bg-c-white {background-color: white;}
+.bg-c-purple {background-color: #6666FF;}
+.bg-c-gray {background-color: #CCCCCC;}
+.bg-c-darkpurple {background-color: #4747B2}
+.bg-c-opaque-black {background-color: rgba(0, 0, 0, 0.6);}
+.bg-img-size {background-size: 100%;}
+.bg-img-pos {background-position: center 40%;}
 
-    /*welcome*/
-    .padding-top-small {padding-top: 1rem;}
+/*MARGINS*/
+.m-remove {margin: 0rem;}
+.m-t-0p125rem {margin-top: 0.125rem}
+.m-t-1rem {margin-top: 1rem;}
+.m-t-2rem {margin-top: 2rem;}
+.m-t-3rem {margin-top: 3rem;}
+.m-l-0p5rem {margin-left: 0.5rem;}
+.m-l-20per {margin-left: 20%;}
+.m-l-auto {margin-left: auto;}
+.m-r-0p5rem {margin-right: 0.5rem;}
+.m-r-20per {margin-right: 20%;}
+.m-r-auto {margin-right: auto;}
 
-    /*banner_title*/
-    .font-family-sansita-one {font-family: 'Sansita One', cursive;}
-    .padding-top-large {padding-top: 4rem;}
+/*FLOAT*/
+.float-r {float: right;}
+.float-l {float: left;}
 
-    /*banner_subtitle*/
-    .padding-top-medium {padding-top: 2.5rem;}
+/*BORDER*/
+.b-remove {border: 0rem;}
+.b-rad-0p2rem {border-radius: 0.2rem}
 
-  /*event*/
-  .margin-top-small {margin-top: 0.7rem;}
-  .margin-sides-set {
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-  .width-min {min-width: 35rem}
+/*OUTLINE*/
+.outl-remove {outline: 0rem;}
 
-    /*image_panel*/
-    .bg-img-size {background-size: 100%;}
-    .bg-img-pos {background-position: center 40%;}
-    .hover-box-shadow:hover {box-shadow: 0px 3px 50px rgba(20, 20, 20, 0.6);}
+/*DISPLAY*/
+.dis-none {display: none;}
+.dis-block {display: block;}
+.dis-inline-block {display: inline-block;}
 
-      /*image_panel_text_container*/
-      .bg-color-opaque-black {background-color: rgba(0, 0, 0, 0.6);}
-      .pos-relative {position: relative;}
-      .move-from-top {top: 7.5rem;}
-      .font-family-ubuntu {font-family: 'Ubuntu', sans-serif;}
-      .padding-left {padding-left: 1rem;}
+/*EFFECTS*/
+.hover-box-shadow:hover {box-shadow: 0px 3px 50px rgba(20, 20, 20, 0.6);}
+.active-bg-color:active {background-color: #32327D}
 
-        /*event_type_date_container*/
-        .float-right {float: right;}
-        .no-line-break {display: inline-block;}
+/*POSITION*/
+.pos-relative {position: relative;}
 
-    /*info_panel*/
-    .bg-color-gray {background-color: #CCCCCC;}
-    .height-auto-adjust {height: auto;}
-
-      /*info_panel_text_container*/
-      .padding {padding: 0.5rem;}
-      .font-family-homenaje {font-family: 'Homenaje', sans-serif;}
-
-/*UNCATEGORIZED*/
-.margin-center {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.bg-color-black {background-color: black;}
-.bg-color-white {background-color: white;}
-.bg-color-green {background-color: #00CC99;}
-
-.hide {display: none;}
+.top-7p5rem {top: 7.5rem;}

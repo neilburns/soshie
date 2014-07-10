@@ -3,6 +3,7 @@ ruby '2.0.0'
 
 # geolocation
 gem 'geocoder'
+gem 'nearest_time_zone'
 
 # PostgreSQL driver
 gem 'pg'

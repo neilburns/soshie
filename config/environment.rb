@@ -20,6 +20,7 @@ require "sinatra/reloader" if development?
 
 require 'erb'
 require 'geocoder'
+require 'nearest_time_zone'
 
 
 # Some helper constants for path-centric logic
