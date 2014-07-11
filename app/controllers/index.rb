@@ -1,5 +1,5 @@
 get '/' do
-  erb :event_feed
+  erb :index
 end
 
 get '/nearby' do
