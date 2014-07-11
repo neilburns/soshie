@@ -3,16 +3,12 @@ get '/' do
 end
 
 get '/nearby' do
-  latitude = params[:latitude].to_f
-  longitude = params[:longitude].to_f
-  Event.near([latitude, longitude], 10).to_json
+  Event.near([params[:latitude].to_f,
+              params[:longitude].to_f], 50).to_json # responding to ajax request
 end
 
 post '/create' do
-  p "creating event..."
-  new_event = Event.create({:title => params[:title], :description => params[:description],
-                            :address => params[:address], :venue => params[:venue],
-                            :datetime => params[:datetime]})
-  new_event.timezone = NearestTimeZone.to(new_event.latitude, new_event.longitude)
+  new_event = Event.create(params)
+  new_event.datetime = DateTime.iso8601(params[:datetime])
   redirect '/'
 end
