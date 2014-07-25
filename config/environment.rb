@@ -16,7 +16,6 @@ require 'sinatra'
 require "sinatra/reloader" if development?
 require 'erb'
 require 'geocoder'
-require 'nearest_time_zone'
 require 'faker'
 
 
