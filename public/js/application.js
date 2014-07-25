@@ -137,4 +137,13 @@ function writePanels(nearby_events) {
     // Append the newly created panel to the DOM.
     $("[data-component='event_feed_container']").append($new_panel);
   }
+  enableDiscover();
+}
+
+function enableDiscover() {
+  // Enable and change styling of "Discover" button.
+  $("[data-component='discover']").text("discover")
+  $("[data-component='discover']").removeAttr("disabled");
+  $("[data-component='discover']").removeClass("bg-c-gray");
+  $("[data-component='discover']").addClass("bg-c-darkpurple active-bg-color");
 }

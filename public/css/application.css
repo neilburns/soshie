@@ -1,13 +1,4 @@
-/*        I DON'T KNOW HOW I FEEL ABOUT
-   ________  _________  ________  _____ ______   ___  ________          ________  ________   ________
-  |\   __  \|\___   ___\\   __  \|\   _ \  _   \|\  \|\   ____\        |\   ____\|\   ____\ |\   ____\
-  \ \  \|\  \|___ \  \_\ \  \|\  \ \  \\\__\ \  \ \  \ \  \___|        \ \  \___|\ \  \___|_\ \  \___|_
-   \ \   __  \   \ \  \ \ \  \\\  \ \  \\|__| \  \ \  \ \  \            \ \  \    \ \_____  \\ \_____  \
-    \ \  \ \  \   \ \  \ \ \  \\\  \ \  \    \ \  \ \  \ \  \____        \ \  \____\|____|\  \\|____|\  \
-     \ \__\ \__\   \ \__\ \ \_______\ \__\    \ \__\ \__\ \_______\       \ \_______\____\_\  \ ____\_\  \
-      \|__|\|__|    \|__|  \|_______|\|__|     \|__|\|__|\|_______|        \|_______|\_________\\_________\
-                                                                                    \|_________\|_________|
-*/
+/* Experimenting with Atomic CSS / Object-oriented CSS */
 
 /*WIDTH*/
 .w-100per {width: 100%;}
@@ -63,6 +54,7 @@
 .bg-c-purple {background-color: #6666FF;}
 .bg-c-gray {background-color: #CCCCCC;}
 .bg-c-darkpurple {background-color: #4747B2}
+.bg-c-gray {background-color: #A0A0A0}
 .bg-c-opaque-black {background-color: rgba(0, 0, 0, 0.6);}
 .bg-img-size {background-size: 100%;}
 .bg-img-pos {background-position: center 40%;}
