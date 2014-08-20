@@ -25,6 +25,7 @@
 .f-f-ubuntu {font-family: 'Ubuntu', sans-serif;}
 .f-f-ubuntu-light {font-family: 'Ubuntu', sans-serif;}
 .f-f-homenaje {font-family: 'Homenaje', sans-serif;}
+.f-f-helvetica {font-family: 'Helvetica'}
 .text-center {text-align: center;}
 .f-smoothing {
   -webkit-font-smoothing: antialiased;
@@ -73,6 +74,7 @@
 .m-l-0p5rem {margin-left: 0.5rem;}
 .m-l-20per {margin-left: 20%;}
 .m-l-auto {margin-left: auto;}
+.m-r-3rem {margin-right: 3rem;}
 .m-r-0p5rem {margin-right: 0.5rem;}
 .m-r-20per {margin-right: 20%;}
 .m-r-auto {margin-right: auto;}
