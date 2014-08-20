@@ -72,7 +72,7 @@ function growBanner() {
 function shrinkBanner() {
   $("[data-component='banner']").animate({
     "margin-top": "-=" + $(window).height()/4 + "px",
-    "height": "-=12rem"
+    "height": "-=14rem"
   }, "slow");
 }
 
@@ -97,6 +97,7 @@ function fadeBannerButtons() {
 // the data of nearby events and triggers the production
 // of event elements in the DOM.
 function geolocate() {
+
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
           // Using the user's coordinates, request
@@ -142,8 +143,9 @@ function writePanels(nearby_events) {
 
 function enableDiscover() {
   // Enable and change styling of "Discover" button.
-  $("[data-component='discover']").text("discover")
+  $("[data-component='discover']").animate({
+    opacity: "1"
+  }, 1000);
   $("[data-component='discover']").removeAttr("disabled");
-  $("[data-component='discover']").removeClass("bg-c-gray");
-  $("[data-component='discover']").addClass("bg-c-darkpurple active-bg-color");
+  $("[data-component='discover']").addClass("hover-bg-color");
 }

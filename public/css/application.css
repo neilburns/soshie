@@ -21,10 +21,15 @@
 .f-6rem {font-size: 6rem;}
 .f-c-white {color: white;}
 .f-w-light {font-weight: lighter;}
-.f-f-sansita-one {font-family: 'Sansita One', cursive;}
+.f-f-sansita-one {font-family: 'Sansita One', 'Helvetica';}
 .f-f-ubuntu {font-family: 'Ubuntu', sans-serif;}
+.f-f-ubuntu-light {font-family: 'Ubuntu', sans-serif;}
 .f-f-homenaje {font-family: 'Homenaje', sans-serif;}
 .text-center {text-align: center;}
+.f-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 /*HEIGHT*/
 .h-1rem {height: 1rem;}
@@ -32,7 +37,7 @@
 .h-3rem {height: 3rem;}
 .h-5rem {height: 5rem;}
 .h-10rem {height: 10rem;}
-.h-18rem {height: 18rem;}
+.h-22rem {height: 20rem;}
 
 /*PADDING*/
 .pad-remove {padding: 0rem;}
@@ -90,7 +95,8 @@
 
 /*EFFECTS*/
 .hover-box-shadow:hover {box-shadow: 0px 3px 50px rgba(20, 20, 20, 0.6);}
-.active-bg-color:active {background-color: #32327D}
+.hover-bg-color:hover {background-color: #32327D}
+.transparent {opacity: 0}
 
 /*POSITION*/
 .pos-relative {position: relative;}

@@ -21,13 +21,40 @@ addresses = ["4 Pennsylvania Plaza, New York, NY 10001",
   "525 W Santa Clara St, San Jose, CA 95113",
   "1221 Polk Street, San Francisco, CA 94109"]
 
-word_count = 2 + Random.rand(3)
+Event.create({:title => "Calvin Harris Live at MSG",
+              :venue => "Madison Square Garden",
+              :address => addresses[0],
+              :imgurl => imgurls[0],
+              :description => "He's the undisputed master of electronic dance music, and he's in New York City for one night only!",
+              :datetime => DateTime.now})
 
-30.times do |i|
-  Event.create({:title => Faker::Lorem.sentence(word_count),
-                :venue => Faker::Lorem.sentence(word_count),
-                :address => addresses[Random.rand(addresses.length)],
-                :imgurl => imgurls[Random.rand(imgurls.length)],
-                :description => Faker::Lorem.sentence(word_count * 3),
-                :datetime => DateTime.now})
-end
+Event.create({:title => "Alpha Beta Gamma Spring Formal",
+              :venue => "Tybee Gardens",
+              :address => addresses[1],
+              :imgurl => imgurls[1],
+              :description => "Come celebrate spring formal with Alpha Beta Gamma, at the romantic Tybee Gardens.",
+              :datetime => DateTime.now})
+
+Event.create({:title => "Carolina Cup Steeplechase Race",
+              :venue => "Springdale Race Course",
+              :address => addresses[2],
+              :imgurl => imgurls[2],
+              :description => "College students love the chance to dress up and watch the horses. It's legendarily immemorable...",
+              :datetime => DateTime.now})
+
+Event.create({:title => "Pool Party",
+              :venue => "Davidson College",
+              :address => addresses[3],
+              :imgurl => imgurls[3],
+              :description => "You're invited to a pool party hosted by the Davidson college swim teams. It's going to make a big splash.",
+              :datetime => DateTime.now})
+
+Event.create({:title => "Youth Soccer Tournament",
+              :venue => "Davidson College",
+              :address => addresses[4],
+              :imgurl => imgurls[4],
+              :description => "Come on out, if not to watch some tykes kick a ball, then to enjoy the weather.",
+              :datetime => DateTime.now})
+
+
+
